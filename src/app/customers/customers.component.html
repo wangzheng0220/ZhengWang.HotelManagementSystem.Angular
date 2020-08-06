@@ -1,0 +1,22 @@
+<p>Customer Information</p>
+
+<!-- <ul class="list-unstyled p-2">
+    <li *ngFor="let cust of customers" class="m-1">
+      {{ cust.Cname }}
+    </li>
+  </ul> -->
+
+  <div class="rounded">
+    <div class="container-fluid light">
+      <div class="row">
+        
+        <div *ngFor="let cust of customers">
+          <a [routerLink]="['customer',cust.id]">
+          {{cust.cname}}
+          </a>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
